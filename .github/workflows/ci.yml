@@ -29,6 +29,7 @@ jobs:
           python3 -m pip install --user pipx
           python3 -m pipx ensurepath
           pipx install .
+          cat /opt/pipx/logs/*.log
 
       - name: Execute test command with pipx
         run: |
